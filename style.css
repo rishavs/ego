@@ -26,3 +26,6 @@
     to {opacity:1;}
 }
  
+body {
+    overflow-y: scroll; /* Show vertical scrollbar */
+}

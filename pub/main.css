@@ -1285,6 +1285,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -1360,10 +1364,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.5rem;
 }
 
-.mt-28 {
-  margin-top: 7rem;
-}
-
 .block {
   display: block;
 }
@@ -1386,6 +1386,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-36 {
@@ -1474,10 +1478,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.flex-col {
-  flex-direction: column;
 }
 
 .items-center {
@@ -1575,8 +1575,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(190 24 93 / 0));
 }
 
+.from-gray-900 {
+  --tw-gradient-from: #111827;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(17 24 39 / 0));
+}
+
+.from-rose-700 {
+  --tw-gradient-from: #be123c;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(190 18 60 / 0));
+}
+
 .via-pink-700 {
   --tw-gradient-stops: var(--tw-gradient-from), #be185d, var(--tw-gradient-to, rgb(190 24 93 / 0));
+}
+
+.via-blue-700 {
+  --tw-gradient-stops: var(--tw-gradient-from), #1d4ed8, var(--tw-gradient-to, rgb(29 78 216 / 0));
 }
 
 .to-white {
@@ -1617,16 +1631,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-28 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
 }
 
 .pl-4 {
@@ -1683,16 +1687,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-gray-600 {
   --tw-text-opacity: 1;
   color: rgb(75 85 99 / var(--tw-text-opacity));
-}
-
-.text-gray-100 {
-  --tw-text-opacity: 1;
-  color: rgb(243 244 246 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .placeholder-gray-400::-moz-placeholder {
@@ -1818,6 +1812,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+body {
+  overflow-y: scroll;
+  /* Show vertical scrollbar */
+}
+
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
   --tw-scale-y: 1.25;
@@ -1849,4 +1848,3 @@ Ensure the default browser behavior of the `hidden` attribute.
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
- 
