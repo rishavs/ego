@@ -1,0 +1,57 @@
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=yes">
+<title>Digglu</title>
+<link
+    href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAOwAAADdAAAAxQAAAPYAAABfAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADYAAAD+AAAA/wAAAP8AAAD/AAAAcQAAAAAAAABEAAAAjQAAAE8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAcAAADMAAAA/wAAAP8AAAD/AAAA/wAAAOwAAACfAAAA/gAAAOUAAAD+AAAASwAAAAAAAAAAAAAAAAAAAAAAAABhAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA9QAAAHIAAAADAAAA0AAAAKIAAAAAAAAAAAAAAAAAAAAAAAAAkgAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAM0AAAAAAAAAAAAAAJMAAACUAAAAAAAAAAAAAAAPAAAABgAAAHQAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAACwAAAAAQAAABUAAAABAAAAAQAAAAAAAAAAAAAAKQAAAFkAAACrAAAA/wAAAP8HBgX/Dw4O/wAAAP8AAAD/AAAA0QAAAF4AAAA7AAAAAAAAAAAAAAAAAAAAAAAAABMAAAB1AAAA/xwoKv8fLC//FBMT/yUkI/8RGRr/Kjo+/wAAAP8AAAClAAAAHgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAs4a8yv//////8////1t/iP8aJCb////////////S////AAAA7QAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM+h4vH//////3alsf8SGRv/AAAA/2+cp//1////5f///wAAAP8AAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACoAAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAADkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeQAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAtQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHmCh87/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/Wl6P/zk7WrQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB5tb3//wAAAP8AAAD7AAAA0gAAANYAAADvAAAA/4iN1/8+QGK0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeTU3VP8AAADgAAAAPAAAAAAAAAAAAAAAHgAAAMITEx7/LC1GtAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGwAAACuAAAAEgAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAgwAAAKQAAAAAAAAAAAAAAAAAAAAA8D8AAPABAADgAQAA4AEAAOAZAACAAQAAgAMAAIADAADABwAAwAcAAMAHAADADwAAwA8AAMAPAADDDwAAx48AAA=="
+    rel="icon" type="image/x-icon">
+
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:title" content="">
+<meta property="og:type" content="">
+<meta property="og:url" content="">
+<meta property="og:image" content="">
+
+<link rel="stylesheet" type="text/css" href="main.css" />
+<script type="module" src="main.js"></script>
+
+<body class="">
+    <!-- Progress bar on top of the page -->
+    <div id="progressbar_container">
+        <div id="progressbar" class="h-1 bg-gradient-to-r from-pink-700 via-pink-700 to-white"
+            style="position: fixed; top: 0; z-index:100; width: 0%; transition: width 1s;"></div>
+    </div>
+
+    <header
+        class="shadow shadow-gray-900 bg-sky-900 flex items-center justify-between px-16 h-12 fixed w-full z-10 top-0">
+        <!-- Logo -->
+        <a href="#" class="flex items-center">
+            <img class="inline-block h-8 w-8 rounded-md ring-2 ring-white" src="assets/1.png" alt="">
+            <span class="pl-4 font-semibold text-gray-200 text-xl">Temple to my Ego </span>
+        </a>
+        <!-- Search textbox -->
+        <form action="/search" class="mt-4 w-1/2 relative">
+            <input type="search" placeholder="&nbsp &nbsp Press Ctrl + / to focus here."
+                class="p-2 text-gray-700 w-full bg-gray-900 rounded placeholder-gray-400 focus:outline-none focus:border-gray-400 focus:bg-background-light">
+            <button type="submit"
+                class="bg-sky-900 text-gray-300 rounded font-lg absolute top-0 right-0 bottom-0 mt-1 mr-1 mb-1 px-4 font-semibold hover:bg-primary-light focus:outline-none focus:shadow-outline">
+                Search
+            </button>
+        </form>
+
+        <div></div>
+    </header>
+    <main id="pagecontent_container" class="bg-gray-900 ">
+        <article class="px-16 h-screen flex items-center ">
+            <p class="prose prose-2xl m-auto text-3xl text-center text-gray-400">
+                Please enable Javascript to view this site. This is a Single Page Application and it needs JS to render.
+            </p>
+        </article>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.0.7/marked.min.js"></script>
+</body>
+
+</html>

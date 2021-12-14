@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dbg {
+    @apply border-2 border-black;
+}
+
+.dbgr {
+    @apply border border-red-600;
+}
+
+.dbgg {
+    @apply border border-green-600;
+}
+
+.dbgb {
+    @apply border border-blue-600;
+}
+
+ /* Fade in animation for new pages */
+.pageEntry {animation:fade-in 1s;}
+
+@keyframes fade-in {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+ 
