@@ -6,21 +6,22 @@ class Home {
         Object.keys(PostsMetadata).forEach((key) => {
             let fragString = /*html*/`
                 <a href="/#/${key}"
-                    class="p-6 bg-white flex items-center space-x-6 rounded-lg shadow-md hover:scale-[1.02] transition transform duration-500 cursor-pointer">
-                    <div>
+                    class="relative p-4 bg-sky-900 shadow rounded-lg shadow-md hover:scale-[1.02] transition transform duration-500 cursor-pointer">
+                    <div class="flex items-center space-x-6">
                         <img class="flex-none h-32 w-32 rounded-3xl ring-2 ring-white" src="assets/1.png" alt="">
+                        <div>
+                            <p class="absolute top-0 right-0 text-sm text-gray-400 py-2 pr-8"> Posted on 16 Dec, 2021</p>
+                            <h1 class="text-xl font-bold text-gray-300 mt-4 line-clamp-2">${PostsMetadata[key].title}</h1>
+                            <p class="text-gray-400 line-clamp-3">${PostsMetadata[key].description}</p>
+                        </div>
                     </div>
-                    <div>
-                        <h1 class="text-xl font-bold text-gray-700 mb-2">${PostsMetadata[key].title}</h1>
-                        <p class="text-gray-600 w-80 text-sm">${PostsMetadata[key].description}</p>
-                    </div>
+                    <hr class="mt-4">
                 </a>
             `
 
             postCards += fragString
-          
+
         });
-        console.log(postCards)
 
         this.view =  /*html*/`
             <section class="pageEntry px-16 h-screen flex items-center justify-center">
@@ -29,7 +30,7 @@ class Home {
                     <img class="inline-block h-32 w-32 rounded-3xl ring-2 ring-white" src="assets/1.png" alt="">
                     <div class="flex justify-center space-x-8">
                         <!-- Twitter Button -->
-                        <a class="" target="_blank" href="/">
+                        <a class="" target="_blank" href="https://twitter.com/Rishav_Sharan">
                             <svg class="h-8 w-8 fill-gray-400 hover:fill-white hover:scale-125 transition transform duration-500 "
                                 role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <title>Twitter</title>
@@ -39,7 +40,7 @@ class Home {
                         </a>
 
                         <!--Linkedin Button-->
-                        <a class="" target="_blank" href="/">
+                        <a class="" target="_blank" href="https://www.linkedin.com/in/rishav-sharan">
                             <svg class="h-8 w-8 fill-gray-400 hover:fill-white hover:scale-125 transition transform duration-500 "
                                 role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                 <title>LinkedIn</title>
@@ -88,16 +89,25 @@ class Home {
                     </p>
                     <!-- ... -->
                 </div>
-                </section>
+            </section>
+            <hr class="px-16 bg-gray-200"/>
 
-                <section class="min-h-screen">
-                <nav class="bg-sky-900 flex items-center sticky top-12 h-16 px-16 space-x-8">
-                    <a href="/#/about" class="bg-sky-200">About</a>
-                    <a href="/#/markdown-sample" class="bg-sky-200">markdown-sample</a>
-                    <button class="bg-sky-200">All</button>
-                    <button class="rounded-full bg-sky-600 py-1 px-4">Save Changes</button>
-                    <button>Scroll below</button>
-                    <button class="bg-cyan-500 shadow-lg shadow-cyan-500/50 ...">Subscribe</button>
+
+            <section class="min-h-screen">
+                <nav class="bg-slate-800 flex flex-wrap items-center sticky top-12 py-2 px-16 space-x-4">
+                    <button class="bg-gray-900 py-1 px-2 my-2 rounded text-gray-400">All</button>
+                    <button class="bg-gray-500 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-800">Some weird tag</button>
+                    <button class="bg-gray-500 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-800">Some weird tag</button>
+                    <button class="bg-gray-500 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
+                    <button class="bg-gray-500 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
+                    <button class="bg-gray-500 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
+                    <button class="bg-gray-500 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
+                    <button class="bg-gray-500 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
+                    <button class="bg-gray-500 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
+                    <button class="bg-gray-500 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
+                    <button class="bg-gray-500 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
+                    <button class="bg-gray-500 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
+
 
                 </nav>
                 <div class="p-16 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -111,7 +121,7 @@ class Home {
         return document.createRange().createContextualFragment(this.view)
     }
 }
-  
-  
+
+
 // Export this module
 export default Home
