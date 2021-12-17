@@ -78,7 +78,7 @@ class Home {
                         </div>
                         <p>
                         <h1 class="text-gray-300">
-                            Hey, listen!
+                            [UNDER DEVELOPMENT]
                         </h1>
                         </p>
                         <p class="">
