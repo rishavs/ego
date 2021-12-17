@@ -45,19 +45,19 @@ const router = async () => {
     let page = null
     // If the url has no resource, then its for the Home page
     if (! requestURL.length) {
-        page = new Home
+        page = await new Home
     }
     // If the url exists in the data.js store, then its an article
     else if (PostsMetadata.hasOwnProperty(requestURL)) {
-        page = new Article(requestURL)
+        page = await new Article(requestURL)
     }
     // Else its a 404 error
     else {
-        page = new Error404();
+        page = await new Error404();
 
     }
-    let pageContent = page.htmlify()
-    content_div.replaceChildren(pageContent)
+    // let pageContent = page.htmlify()
+    content_div.replaceChildren(page)
 
     // // End the Progress bar animation as the page has finished loading 
     await ProgressEnd();

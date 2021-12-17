@@ -13,13 +13,10 @@ const PostsMetadata = {
         "published_at": "",
         "views": 100
     },
-    "markdown-sample2": {
-        "title": "This is the 2ndz sample Markdown for testing",
-        "description": "In this tutorial, let us look at two commonly used, seemingly similar array methods and compare them to see different they are. To begin with, let's quickly understand what a method is and then look at the syntax, functionality followed by comparing forEach and map methods. ",
-        "tags": [
-            "tag1",
-            "tag2"
-        ],
+    "making-a-spa-in-vanilla-js": {
+        "title": "Making a Single Page App in ye good olde JS (ES6)",
+        "description": "Guide on creating a basic blog like single page app (SPA) using no frontend frameworks but just plain javascript (ES6). You do not need React. You do not need Vue. All you need is a editor and basic knowledge of modern javascript.",
+        "tags": ['ES6', 'VanillaJS', 'SPA', 'single-page-app'],
         "published_at": "",
         "views": 100
     }
