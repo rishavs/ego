@@ -40,7 +40,8 @@ class Home {
             });
 
             let view =  /*html*/`
-                <section class="pageEntry px-16 h-screen flex items-center justify-center">
+            <article class="pageEntry">
+                <section class="px-16 h-screen flex items-center justify-center">
 
                     <div class="prose prose-xl text-gray-300 text-center">
                         <img class="inline-block h-32 w-32 rounded-3xl ring-2 ring-white" src="assets/1.png" alt="">
@@ -81,11 +82,8 @@ class Home {
                             [UNDER DEVELOPMENT]
                         </h1>
                         </p>
-                        <p class="">
-                            Welcome to this {WIP} temple to my Ego.
-                        </p>
                         <p>
-                            My name is Rishav Sharan.
+                            Hi! My name is Rishav Sharan.
                         </p>
                         <p>
                             I am a technologist, bibliophile, rationalist and mostly an all-around awesome chap.
@@ -110,7 +108,7 @@ class Home {
 
 
                 <section class="min-h-screen">
-                    <nav class=" flex flex-wrap items-center sticky top-12 py-2 px-16 space-x-4">
+                    <nav class=" flex flex-wrap items-center sticky top-12 py-2 px-16 space-x-4 z-10 bg-slate-900">
                         <button class="bg-gray-900 py-1 px-2 my-2 rounded text-gray-400">All</button>
                         <button class="bg-sky-900 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-800">Some weird tag</button>
                         <button class="bg-sky-900 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-800">Some weird tag</button>
@@ -131,6 +129,7 @@ class Home {
                     </div >
 
                 </section >
+        </article>
             `
             return document.createRange().createContextualFragment(view)
         } catch (err) {

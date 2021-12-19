@@ -1,13 +1,9 @@
----
-title: Making a Single Page App in ye good olde JS (ES6)
-published: true
-description: Guide on creating a basic blog like single page app (SPA) using no frontend frameworks but just plain javascript (ES6). You do not need React. You do not need Vue. All you need is a editor and basic knowledge of modern javascript.
-tags: ES6, VanillaJS, SPA, single-page-app
----
-![Imgur](https://i.imgur.com/Nh6IfFz.png)
+![Post Header Image](assets/VanillaJS.png)
 
-Demo: https://src-brsetrrnrp.now.sh/
-Repo: https://github.com/rishavs/vanillajs-spa
+# Making a SPA in VanillaJS
+
+> Demo: https://src-brsetrrnrp.now.sh/  
+> Repo: https://github.com/rishavs/vanillajs-spa
 
 Making a SPA (single page app) is all the rage these days. A SPA is much snappier, gives better UX and can be much simpler to develop and deploy.
 But, to develop a SPA, one often requires lots of semantically huge frameworks like React, Vue etc and often, to use these frameworks properly, one needs more knowledge of these frameworks than one needs of the core language itself.
@@ -23,8 +19,9 @@ So, of course, I told myself that I might as well make the entire app in JS itse
 Surprisingly, there are not a lot of articles on making SPAs with vanillaJS and some of the articles that do guide the reader in this, tend to use a lot of libraries. Why am I stressing on  plain JS? This [page](http://vanilla-js.com/) provides some compelling arguments.
 
 My plan was to use no library, unless it is clear to me that 
--- I am wasting too much time reinventing the wheel
--- This is beyond me.
+
+* I am wasting too much time reinventing the wheel
+* This is beyond me.
 
 So, handcoded Vanilla JS first. Libraries only when needed. 
 Every bit of 3rd party code that you use comes with its own baggage and one should always check if the weight of baggage is less than the gains from using it.
@@ -40,23 +37,23 @@ Know your needs and the tools needed to best implement them.
 Before we begin with the implementation, let us look at what are we developing. 
 
 The app will have the following pages:
--- Home: containing a list of all posts. Shows data fetched from an api and rendered here.
--- Post for specific id : containing details of that post. Shows the dynamic url parsing.
--- About: Containing just some text. This is to showoff the router
--- Secret : This page is not in my composed routes and will be used to show the 404 handling.
--- Register: Contains a form and on clicking a button, shows the form data.
+* Home: containing a list of all posts. Shows data fetched from an api and rendered here.
+* Post for specific id : containing details of that post. Shows the dynamic url parsing.
+* About: Containing just some text. This is to showoff the router
+* Secret : This page is not in my composed routes and will be used to show the 404 handling.
+* Register: Contains a form and on clicking a button, shows the form data.
 
 
 Each page in my app itself will have the following structure:
--- Navbar
--- Content section
--- Footer
+* Navbar
+* Content section
+* Footer
 
 
 Each route in my app has the following structure:
--- Resource
--- Identifier
--- verb
+* Resource
+* Identifier
+* verb
 
 For example, 
 if the url is "localhost:8080/#/users/rishav/edit" then
@@ -65,7 +62,7 @@ resource = "users", identifier = "rishav" and verb = "edit".
 Since I have  a very fixed structure for the urls that i will support, making a hash based router for it becomes real easy. In my route, the resource and verb strings are pre-defined but the identifier is dynamic.
 
 
-You can take a look at the [demo app](https://src-brsetrrnrp.now.sh/) at:
+You can take a look at the [Demo App](https://src-brsetrrnrp.now.sh/)
 Do note, I have not made it pretty at all, as that's not the purpose of this article. Also, I am lazy :)
 
 ----------------------------------------------
@@ -77,9 +74,9 @@ I am also using https://www.mockapi.io to populate my app with sample data via a
 
 
 The article will focus on the following main aspects of the spa;
--- The Router (using url hash) and
--- Templating (using ES6 template literals) and
--- The project architecture (using ES6 modules)
+* The Router (using url hash) and
+* Templating (using ES6 template literals) and
+* The project architecture (using ES6 modules)
 
 
 
@@ -149,7 +146,7 @@ And in this code, I refer to a simple function in another file which is;
 ```
 
 Lets walk through what happens when the user puts the following url in the addressbar and clicks enter;
--- localhost:8080/#/About
+* localhost:8080/#/About
 
 First, this bit of code `window.addEventListener('load', router);` gets fired as a browser load event is used.
 It then calls the router function.
@@ -277,7 +274,7 @@ This allows me to define the code for the button press and this code gets initia
 
 ## App structure
 
-![Imgur](https://i.imgur.com/kzyHwsI.png)
+![Folder Structure Image](assets/folder-structure.png)
 This is how I have structured the app. The views folder contains my dynamic content [pages]  and the smaller components [components]. If I add reusable components like cards, comments etc, I will be adding components for them here.
 
 If you have noticed, we are not using any bundler like parceljs, webpack etc because ES6 onward I really don't need to. I can use the simple html directive of script tag type=module to tell the browser that it we have a modularised app in our JS and it needs to consider the ES6 import/export commands and stitch the modules up accordingly.
@@ -346,7 +343,7 @@ Of course, you may still want to use the bundlers to do stuff like minifying, gz
 Whew. Look at the time!
 We are now done with our simple blog style spa!
 
-**I would highly recommend you to go through the actual code at https://github.com/rishavs/vanillajs-spa **
+> I would highly recommend you to go through the actual code at https://github.com/rishavs/vanillajs-spa
 
 The code is simple, well commented and inline with what I wrote in this guide. Hopefully, it will help you get started on journey on a clean path through the cluttered JS framework jungle.
 
