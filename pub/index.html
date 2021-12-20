@@ -29,30 +29,29 @@
     </div>
 
     <header
-        class="shadow shadow-gray-900 bg-sky-900 flex items-center justify-between px-16 h-12 fixed w-full z-10 top-0">
+        class="shadow shadow-gray-900 bg-sky-900 flex items-center justify-between space-x-2 px-4 md:px-24 h-12 fixed w-full z-10 top-0">
         <!-- Logo -->
-        <a href="/#/" class="flex items-center">
+        <a href="/#/" class="flex flex-none items-center">
             <img class="inline-block h-8 w-8 rounded-md ring-2 ring-white" src="assets/Default-face.png" alt="">
-            <h1 class="pl-4 font-semibold text-gray-200 text-xl">Rishav's lair </h1>
+            <h1 class="hidden md:block pl-4 font-semibold text-gray-200 text-xl">Rishav's lair </h1>
         </a>
         <!-- Search textbox -->
-        <form action="/search" class="mt-4 w-1/2 relative">
-            <input type="search" placeholder="&nbsp &nbsp Press Ctrl + / to focus here."
+        <form action="/search" class="mt-4 min-w-md w-full md:w-1/2 relative">
+            <input type="search" placeholder="&nbsp Press Ctrl + / to focus"
                 class="p-2 text-gray-700 w-full bg-gray-900 rounded placeholder-gray-400 focus:outline-none focus:border-gray-400 focus:bg-background-light">
             <button type="submit"
-                class="bg-orange-300 text-gray-900 rounded font-lg absolute top-0 right-0 bottom-0 mt-1 mr-1 mb-1 px-4 font-semibold hover:bg-primary-light focus:outline-none focus:shadow-outline">
+                class="bg-orange-300 text-gray-900 rounded font-lg absolute top-0 right-0 bottom-0 mt-1 mr-1 mb-1 px-2 font-semibold hover:bg-primary-light focus:outline-none focus:shadow-outline">
                 Search
             </button>
         </form>
 
-        <div>
-
-
-        </div>
+        <button class="h-8 w-8 text-orange-300 rounded flex-none shadow shadow-gray-900"> 
+            <svg class="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path></svg>
+        </button>
     </header>
     <main id="pagecontent_container"
         class="text-gray-500 dark:bg-gradient-to-r dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-        <article class="px-16 h-screen flex items-center ">
+        <article class="px-4 md:px-24 h-screen flex items-center ">
             <p class="prose prose-2xl m-auto text-3xl text-center text-gray-400">
                 Please enable Javascript to view this site. This is a Single Page Application and it needs JS to render.
             </p>

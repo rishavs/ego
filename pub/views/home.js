@@ -12,9 +12,9 @@ class Home {
             Object.keys(PostsMetadata).forEach((key) => {
                 let fragString = /*html*/`
                     <a href="/#/${key}"
-                        class="relative h-72 p-4 divide-y divide-slate-900 border dark:border-orange-300 dark:shadow dark:shadow-gray-900 dark:bg-gradient-to-b dark:from-slate-800 dark:to-slate-900 text-gray-500 rounded-2xl hover:scale-[1.02] transition transform duration-500 cursor-pointer">
+                        class="relative h-48 md:h-64 p-4 divide-y divide-slate-900 border border-gray-900 md:dark:border-orange-300 dark:shadow dark:shadow-gray-900 md:dark:bg-gradient-to-b md:dark:from-slate-800 dark:to-slate-900 text-gray-500 md:rounded-2xl hover:scale-[1.02] transition transform duration-500 cursor-pointer text-sm md:text-base">
                         <div class="flex items-center space-x-6 h-40">
-                            <img class="flex-none h-32 w-32 rounded-3xl object-contain" src="assets/VanillaJS.png" alt="">
+                            <img class="flex-none h-12 w-12 md:h-32 md:w-32 md:rounded-3xl object-contain" src="assets/VanillaJS.png" alt="">
                             <div>
                                 <p class="text-sm "> Posted on 16 Dec, 2021</p>
                                 <h1 class="text-xl font-bold text-gray-300 mt-4 line-clamp-2">${PostsMetadata[key].title}</h1>
@@ -22,7 +22,7 @@ class Home {
                             </div>
                         </div>
                         <!-- <hr class="mt-4"> -->
-                        <div class="h-16 flex flex-wrap items-center sticky top-12 py-1 pt-4 space-x-2">
+                        <div class="h-16 flex flex-wrap items-center sticky py-2 px-2 space-x-2 hidden md:block">
                             <span class="text-gray-400 text-sm">Tags: </span>
                             <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
                             <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
@@ -41,10 +41,10 @@ class Home {
 
             let view =  /*html*/`
             <article class="pageEntry">
-                <section class="px-16 h-screen flex items-center justify-center">
+                <section class="px-4 md:px-24 h-screen flex items-center justify-center">
 
-                    <div class="prose prose-xl dark:text-gray-300 text-center">
-                        <img class="inline-block h-32 w-32 rounded-3xl ring-2 ring-white" src="assets/Default-face.png" alt="">
+                    <div class="prose prose-sm md:prose-xl max-w-none md:w-1/2 dark:text-gray-300 text-center">
+                        <img class="mx-auto mt-16 h-32 w-32 rounded-3xl ring-2 ring-white" src="assets/Default-face.png" alt="">
                         <div class="flex justify-center space-x-8">
                             <!-- Twitter Button -->
                             <a class="" target="_blank" href="https://twitter.com/Rishav_Sharan">
@@ -79,7 +79,7 @@ class Home {
                         </div>
                         <p>
                         <h1 class="text-gray-300">
-                            [UNDER DEVELOPMENT]
+                            Hey Listen!
                         </h1>
                         </p>
                         <p>
@@ -89,7 +89,7 @@ class Home {
                             I am a technologist, bibliophile, rationalist and a professional procrastinator.
                             I work as a Product Manager in Microsoft.
                             <br>
-                            This is my blog - where I talk about web dev, gamedev, general cool tech stuff, speculative fiction, curious philosophicies, or just
+                            This is my {WIP} blog - where I talk about web dev, gamedev, general cool tech stuff, speculative fiction, curious philosophicies, or just
                             random junk which interest me. All views here are my own.
                             <br>
                             Anyway, you get the picture. Off you go.
@@ -102,11 +102,11 @@ class Home {
                 </section>
 
                 <section class="min-h-screen">
-                    <nav class=" flex flex-wrap items-center sticky top-12 py-2 px-16 z-10  dark:bg-slate-800 shadow-inner shadow-gray-900">
+                    <nav class=" flex flex-wrap items-center sticky top-12 py-2 px-4 px-12 z-10  dark:bg-slate-800 shadow-inner shadow-gray-900">
                         <button class="bg-gray-900 rounded py-1 px-2 my-2 mr-4 text-gray-400">All</button>
                         <button class=" rounded text-orange-300 py-1 px-2 my-2 mr-4 hover:bg-slate-700 transition transform duration-500 "># Some weird tag </button>
                     </nav>
-                    <div class="p-16 grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="pt-4 md:p-16 grid grid-cols-1 md:grid-cols-2 md:gap-4">
                         ${postCards}
                     </div >
 

@@ -1,31 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>http://rishav-sharan.com/#/making-a-spa-in-vanilla-js</loc>
-    <lastmod>2018-10-11</lastmod>
-    <title>
-        Making a Single Page App in ye good olde JS (ES6)
-    </title>
-    <description>
-        Guide on creating a basic blog like single page app (SPA) using no frontend frameworks but just plain javascript (ES6). You do not need React. You do not need Vue. All you need is a editor and basic knowledge of modern javascript.
-    </description>
-    <tag>
-        Single page app
-    </tag>
-    <tag>
-        Javascript
-    </tag>
-    <tag>
-        ES6
-    </tag>
-    <tag>
-        Vanilla JS
-    </tag>
-    <tag>
-        Router
-    </tag>
-    <tag>
-        Frontend Webdev
-    </tag>
-  </url>
+    <url>
+        <loc>http://rishav-sharan.com/#/making-a-spa-in-vanilla-js</loc>
+        <lastmod>2018-10-11</lastmod>
+        <title> Making a Single Page App in ye good olde JS (ES6) </title>
+        <description>
+            Guide on creating a basic blog like single page app (SPA) using no frontend frameworks but just plain javascript (ES6). You do not need React. You do not need Vue. All you need is a editor and basic knowledge of modern javascript.
+        </description>
+        <thumb> assets/Default-face.png </thumb>
+        <tag> Single page app </tag>
+        <tag> Javascript </tag>
+        <tag> ES6 </tag>
+        <tag> Vanilla JS </tag>
+        <tag> Router </tag>
+        <tag> Frontend Webdev </tag>
+    </url>
 </urlset>
