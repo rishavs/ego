@@ -67,6 +67,14 @@ const router = async () => {
 // reset the progress bar to 0 when trasition is over
 document.getElementById('progressbar').addEventListener("transitionend", ProgressReset);  
 
+document.getElementById('darkmode_toggle').addEventListener("click", (e) => {
+    if (document.getElementById('darkmode_toggle').checked == true) {
+        document.body.classList.add("dark")
+    } else {
+        document.body.classList.remove("dark")
+    }
+});  
+
 // Listen on hash change:
 window.addEventListener('hashchange', router);
 // Listen on page load:

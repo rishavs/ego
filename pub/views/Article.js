@@ -11,15 +11,13 @@ class Article {
 
             let view =  /*html*/`
             <article class="pageEntry w-3/5 prose prose-xl dark:prose-invert max-w-none mx-auto ">
-                <section class="px-16 py-8 rounded-lg shadow-inner shadow-gray-800 bg-slate-800 dark:text-gray-400">    
+                <section class="px-16 py-8 rounded-lg shadow-inner shadow-gray-900 bg-slate-800 dark:text-gray-400">    
                     ${marked.parse(fileText)}
                 </section>
                 
                 <hr>
 
-                <section class="px-16 py-8 ">
-
-                        <div class="prose prose-xl text-gray-300 text-center">
+                <section class="px-16 py-8 prose prose-xl text-gray-300 text-center mx-auto">
                             <img class="inline-block h-32 w-32 rounded-3xl ring-2 ring-white" src="assets/1.png" alt="">
                             <div class="flex justify-center space-x-8">
                                 <!-- Twitter Button -->
@@ -57,12 +55,13 @@ class Article {
                                 Hi there! My name is Rishav Sharan.
                             </p>
                             <p>
-                                This is my blog - where I talk about web dev, gamedev, general cool tech stuff, or weird phisophical ravings, or just
-                                random junk which interests me. You can see a list of all my articles 
+                                This is my blog - where I talk about web dev, gamedev, general cool tech stuff, speculative fiction, curious philosophicies, or just
+                                random junk which interests me. 
+                                <br>
+                                You can see a list of all my articles 
                                 <a href="/#/" class="text-sky-500">here</a>
                             </p>
-                            <!-- ... -->
-                        </div>
+
                     </section>
                     
             </article>

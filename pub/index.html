@@ -42,9 +42,19 @@
             </button>
         </form>
 
-        <div></div>
+        <div>
+            <label class="relative flex justify-between items-center p-2 text-xl">
+                <svg class="w-8 h-8 dark:fill-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                <input id="darkmode_toggle" type="checkbox" class="absolute left-1/2 -translate-x-1/2 w-full h-8 peer appearance-none rounded-md cursor-pointer" />
+                <span class="w-16 h-8 flex items-center flex-shrink-0 ml-4 bg-gray-300 rounded-full duration-300 ease-in-out peer-checked:bg-gray-900 after:w-8 after:h-8 after:bg-white after:rounded-full after:shadow-md after:duration-300 peer-checked:after:translate-x-8"></span>
+                <svg class="w-8 h-8 ml-4 dark:fill-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+            </label>
+              
+              <!-- to remove the hover effect just remove the 2 following classes from the code above 'group' (inside label) and 'group-hover:after:translate-x-1' inside span -->
+              
+        </div>
     </header>
-    <main id="pagecontent_container" class="bg-gradient-to-b from-sky-900 via-gray-900 to-gray-900 py-24">
+    <main id="pagecontent_container" class="bg-gradient-to-r from-gray-300 via-gray-200 to-gray-300 dark:bg-gradient-to-r dark:from-gray-900 dark:via-sky-900 dark:to-gray-900 py-24">
         <article class="px-16 h-screen flex items-center ">
             <p class="prose prose-2xl m-auto text-3xl text-center text-gray-400">
                 Please enable Javascript to view this site. This is a Single Page Application and it needs JS to render.
