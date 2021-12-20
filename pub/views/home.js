@@ -12,24 +12,24 @@ class Home {
             Object.keys(PostsMetadata).forEach((key) => {
                 let fragString = /*html*/`
                     <a href="/#/${key}"
-                        class="relative h-72 p-4 divide-y divide-slate-800 bg-gradient-to-b from-sky-900 to-slate-800 shadow rounded-2xl hover:scale-[1.02] transition transform duration-500 cursor-pointer">
+                        class="relative h-72 p-4 divide-y divide-slate-900 border dark:border-orange-300 dark:shadow dark:shadow-gray-900 dark:bg-gradient-to-b dark:from-slate-800 dark:to-slate-900 text-gray-500 rounded-2xl hover:scale-[1.02] transition transform duration-500 cursor-pointer">
                         <div class="flex items-center space-x-6 h-40">
-                            <img class="flex-none h-32 w-32 rounded-3xl ring-2 ring-white" src="assets/1.png" alt="">
+                            <img class="flex-none h-32 w-32 rounded-3xl object-contain" src="assets/VanillaJS.png" alt="">
                             <div>
-                                <p class="absolute top-0 right-0 text-sm text-gray-400 py-4 pr-8"> Posted on 16 Dec, 2021</p>
+                                <p class="text-sm "> Posted on 16 Dec, 2021</p>
                                 <h1 class="text-xl font-bold text-gray-300 mt-4 line-clamp-2">${PostsMetadata[key].title}</h1>
-                                <p class="text-gray-400 line-clamp-3">${PostsMetadata[key].description}</p>
+                                <p class="line-clamp-3">${PostsMetadata[key].description}</p>
                             </div>
                         </div>
                         <!-- <hr class="mt-4"> -->
-                        <div class="h-16 flex flex-wrap items-center sticky top-12 py-1 pt-4 space-x-4">
+                        <div class="h-16 flex flex-wrap items-center sticky top-12 py-1 pt-4 space-x-2">
                             <span class="text-gray-400 text-sm">Tags: </span>
-                            <span class="text-gray-400 text-sm border border-gray-600 rounded p-1 my-1">Some weird tag</span>
-                            <span class="text-gray-400 text-sm border border-gray-600 rounded p-1 my-1">Some weird tag</span>
-                            <span class="text-gray-400 text-sm border border-gray-600 rounded p-1 my-1">Some weird tag</span>
-                            <span class="text-gray-400 text-sm border border-gray-600 rounded p-1 my-1">Some weird tag</span>
-                            <span class="text-gray-400 text-sm border border-gray-600 rounded p-1 my-1">Some weird tag</span>
-                            <span class="text-gray-400 text-sm border border-gray-600 rounded p-1 my-1">Some weird tag</span>
+                            <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
+                            <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
+                            <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
+                            <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
+                            <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
+                            <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
     
     
                         </div>
@@ -43,8 +43,8 @@ class Home {
             <article class="pageEntry">
                 <section class="px-16 h-screen flex items-center justify-center">
 
-                    <div class="prose prose-xl text-gray-300 text-center">
-                        <img class="inline-block h-32 w-32 rounded-3xl ring-2 ring-white" src="assets/1.png" alt="">
+                    <div class="prose prose-xl dark:text-gray-300 text-center">
+                        <img class="inline-block h-32 w-32 rounded-3xl ring-2 ring-white" src="assets/Default-face.png" alt="">
                         <div class="flex justify-center space-x-8">
                             <!-- Twitter Button -->
                             <a class="" target="_blank" href="https://twitter.com/Rishav_Sharan">
@@ -86,43 +86,25 @@ class Home {
                             Hi! My name is Rishav Sharan.
                         </p>
                         <p>
-                            I am a technologist, bibliophile, rationalist and mostly an all-around awesome chap.
-
+                            I am a technologist, bibliophile, rationalist and a professional procrastinator.
                             I work as a Product Manager in Microsoft.
-                        </p>
-                        <p>
-                            This is my blog - my man cave - my personal tube within the intertubes.
-                            You may find some good articles on tech, or hopefully interesting phisophical ravings, or just
-                            random junk in here.
-                        </p>
-                        <p>
+                            <br>
+                            This is my blog - where I talk about web dev, gamedev, general cool tech stuff, speculative fiction, curious philosophicies, or just
+                            random junk which interest me. All views here are my own.
+                            <br>
                             Anyway, you get the picture. Off you go.
                         </p>
-                        <p>
+                        <p class="">
                             ⇃ Scroll below for the posts ⇂
                         </p>
                         <!-- ... -->
                     </div>
                 </section>
-                <hr class="px-16 bg-gray-200"/>
-
 
                 <section class="min-h-screen">
-                    <nav class=" flex flex-wrap items-center sticky top-12 py-2 px-16 space-x-4 z-10 bg-slate-900">
-                        <button class="bg-gray-900 py-1 px-2 my-2 rounded text-gray-400">All</button>
-                        <button class="bg-sky-900 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-800">Some weird tag</button>
-                        <button class="bg-sky-900 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-800">Some weird tag</button>
-                        <button class="bg-sky-900 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
-                        <button class="bg-sky-900 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
-                        <button class="bg-sky-900 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
-                        <button class="bg-sky-900 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
-                        <button class="bg-sky-900 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
-                        <button class="bg-sky-900 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
-                        <button class="bg-sky-900 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
-                        <button class="bg-sky-900 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
-                        <button class="bg-sky-900 py-1 px-2 my-2 rounded hover:bg-white hover:scale-[1.02] transition transform duration-500  text-gray-900">Some weird tag</button>
-
-
+                    <nav class=" flex flex-wrap items-center sticky top-12 py-2 px-16 z-10  dark:bg-slate-800 shadow-inner shadow-gray-900">
+                        <button class="bg-gray-900 rounded py-1 px-2 my-2 mr-4 text-gray-400">All</button>
+                        <button class=" rounded text-orange-300 py-1 px-2 my-2 mr-4 hover:bg-slate-700 transition transform duration-500 "># Some weird tag </button>
                     </nav>
                     <div class="p-16 grid grid-cols-1 md:grid-cols-2 gap-4">
                         ${postCards}

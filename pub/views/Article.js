@@ -10,15 +10,27 @@ class Article {
             const fileText = await fileBuffer.text();
 
             let view =  /*html*/`
-            <article class="pageEntry w-3/5 prose prose-xl dark:prose-invert max-w-none mx-auto ">
+            <article class="pageEntry w-3/5 prose prose-xl dark:prose-invert max-w-none mx-auto py-16">
+                <div class="flex items-center justify-between py-8 text-orange-300">
+                    <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> ☚ Previous  </a>
+                    <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> 🕮 Articles List </a>
+                    <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> Next ☛ </a>
+                </div>  
+
                 <section class="px-16 py-8 rounded-lg shadow-inner shadow-gray-900 bg-slate-800 dark:text-gray-400">    
                     ${marked.parse(fileText)}
                 </section>
                 
+                <div class="flex items-center justify-between py-8 text-orange-300">
+                    <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> ☚ Previous  </a>
+                    <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> 🕮 Articles List </a>
+                    <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> Next ☛ </a>
+                </div>  
+
                 <hr>
 
                 <section class="px-16 py-8 prose prose-xl text-gray-300 text-center mx-auto">
-                            <img class="inline-block h-32 w-32 rounded-3xl ring-2 ring-white" src="assets/1.png" alt="">
+                            <img class="inline-block h-32 w-32 rounded-3xl ring-2 ring-white" src="assets/Default-face.png" alt="">
                             <div class="flex justify-center space-x-8">
                                 <!-- Twitter Button -->
                                 <a class="" target="_blank" href="https://twitter.com/Rishav_Sharan">
@@ -59,7 +71,7 @@ class Article {
                                 random junk which interests me. 
                                 <br>
                                 You can see a list of all my articles 
-                                <a href="/#/" class="text-sky-500">here</a>
+                                <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> here </a>
                             </p>
 
                     </section>

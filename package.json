@@ -4,7 +4,7 @@
     "description": "",
     "main": "main.js",
     "scripts": {
-        "dev": "npx tailwindcss -i ./style.css -o ./pub/main.css && five-server pub"
+        "dev": "npx tailwindcss -i ./style.css -o ./pub/main.css --watch"
     },
     "author": "",
     "license": "ISC",
