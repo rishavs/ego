@@ -15,4 +15,20 @@
         <tag> Router </tag>
         <tag> Frontend Webdev </tag>
     </url>
+    <url>
+        <loc>http://rishav-sharan.com/#/making-my-blog-site</loc>
+        <lastmod>2018-12-21</lastmod>
+        <title> Making my blog site - Rishav-sharan.com </title>
+        <description>
+            A look at the architecture and approach being this very blog site. I will walk you through why I chose what I chose, parts of the implementation and also why this approach is a great fit for simple blogs and static sites.
+        </description>
+        <thumb> assets/Default-face.png </thumb>
+        <tag> Single page app </tag>
+        <tag> Javascript </tag>
+        <tag> ES6 </tag>
+        <tag> Vanilla JS </tag>
+        <tag> Tailwind CSS </tag>
+        <tag> Router </tag>
+        <tag> Frontend Webdev </tag>
+    </url>
 </urlset>

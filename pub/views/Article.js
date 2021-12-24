@@ -11,30 +11,30 @@ class Article {
 
             let view =  /*html*/`
             <article class="pageEntry md:w-3/5 prose prose-sm md:prose-xl dark:prose-invert max-w-none mx-auto py-4">
-                <div class="flex items-center justify-between px-4 mt-8 py-4 md:mt-8 text-orange-300">
-                    <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> ☚ Previous  </a>
-                    <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> 🕮 Articles List </a>
-                    <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> Next ☛ </a>
+                <div class="flex items-center justify-between px-4 mt-8 py-8 md:mt-12 text-pink-400">
+                    <a href="/#/" class="no-underline border border-pink-400 text-pink-400 rounded px-2 hover:bg-pink-400 hover:text-slate-900 transition transform duration-500"> ☚ Previous  </a>
+                    <a href="/#/" class="no-underline border border-pink-400 text-pink-400 rounded px-2 hover:bg-pink-400 hover:text-slate-900 transition transform duration-500"> 🕮 Articles List </a>
+                    <a href="/#/" class="no-underline border border-pink-400 text-pink-400 rounded px-2 hover:bg-pink-400 hover:text-slate-900 transition transform duration-500"> Next ☛ </a>
                 </div>  
 
-                <section class="px-8 md:px-24 py-8 md:rounded-lg shadow-inner shadow-gray-900 bg-slate-800 dark:text-gray-400">    
+                <section class="p-8 md:px-24 md:py-12 md:rounded-lg shadow shadow-slate-400 dark:shadow-inner dark:shadow-slate-900 bg-slate-100 dark:bg-slate-700 dark:text-slate-300 prose-a:text-pink-400">    
                     ${marked.parse(fileText)}
                 </section>
                 
-                <div class="flex items-center justify-between px-4 mt-8 py-4 md:mt-8  text-orange-300">
-                    <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> ☚ Previous  </a>
-                    <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> 🕮 Articles List </a>
-                    <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> Next ☛ </a>
+                <div class="flex items-center justify-between px-4 mt-8 py-4 md:mt-8  text-pink-400">
+                    <a href="/#/" class="no-underline border border-pink-400 text-pink-400 rounded px-2 hover:bg-pink-400 hover:text-slate-900 transition transform duration-500"> ☚ Previous  </a>
+                    <a href="/#/" class="no-underline border border-pink-400 text-pink-400 rounded px-2 hover:bg-pink-400 hover:text-slate-900 transition transform duration-500"> 🕮 Articles List </a>
+                    <a href="/#/" class="no-underline border border-pink-400 text-pink-400 rounded px-2 hover:bg-pink-400 hover:text-slate-900 transition transform duration-500"> Next ☛ </a>
                 </div>  
 
                 <hr>
 
-                <section class="px-4 md:px-24 py-8 prose md:prose-xl text-gray-300 text-center mx-auto">
+                <section class="px-4 md:px-24 py-8 prose md:prose-xl text-slate-600 dark:text-slate-300 text-center mx-auto">
                             <img class="inline-block h-32 w-32 rounded-3xl ring-2 ring-white" src="assets/Default-face.png" alt="">
                             <div class="flex justify-center space-x-8">
                                 <!-- Twitter Button -->
                                 <a class="" target="_blank" href="https://twitter.com/Rishav_Sharan">
-                                    <svg class="h-8 w-8 fill-gray-400 hover:fill-white hover:scale-125 transition transform duration-500 "
+                                    <svg class="h-8 w-8 fill-slate-400 hover:fill-white hover:scale-125 transition transform duration-500 "
                                         role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <title>Twitter</title>
                                         <path
@@ -44,7 +44,7 @@ class Article {
 
                                 <!--Linkedin Button-->
                                 <a class="" target="_blank" href="https://www.linkedin.com/in/rishav-sharan">
-                                    <svg class="h-8 w-8 fill-gray-400 hover:fill-white hover:scale-125 transition transform duration-500 "
+                                    <svg class="h-8 w-8 fill-slate-400 hover:fill-white hover:scale-125 transition transform duration-500 "
                                         role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <title>LinkedIn</title>
                                         <path
@@ -54,7 +54,7 @@ class Article {
 
                                 <!--Github Button-->
                                 <a class="" target="_blank" href="https://github.com/rishavs">
-                                    <svg class="h-8 w-8 fill-gray-400 hover:fill-white hover:scale-125 transition transform duration-500 "
+                                    <svg class="h-8 w-8 fill-slate-400 hover:fill-white hover:scale-125 transition transform duration-500 "
                                         role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <title>GitHub</title>
                                         <path
@@ -71,7 +71,7 @@ class Article {
                                 random junk which interests me. 
                                 <br>
                                 You can see a list of all my articles 
-                                <a href="/#/" class="no-underline border border-orange-300 text-orange-300 rounded px-2 hover:bg-orange-300 hover:text-gray-900 transition transform duration-500"> here </a>
+                                <a href="/#/" class="no-underline border border-pink-400 text-pink-400 rounded px-2 hover:bg-pink-400 hover:text-slate-900 transition transform duration-500"> here </a>
                             </p>
 
                     </section>

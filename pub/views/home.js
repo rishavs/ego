@@ -12,24 +12,24 @@ class Home {
             Object.keys(PostsMetadata).forEach((key) => {
                 let fragString = /*html*/`
                     <a href="/#/${key}"
-                        class="relative h-48 md:h-64 p-4 divide-y divide-slate-900 border border-gray-900 md:dark:border-orange-300 dark:shadow dark:shadow-gray-900 md:dark:bg-gradient-to-b md:dark:from-slate-800 dark:to-slate-900 text-gray-500 md:rounded-2xl hover:scale-[1.02] transition transform duration-500 cursor-pointer text-sm md:text-base">
-                        <div class="flex items-center space-x-6 h-40">
-                            <img class="flex-none h-12 w-12 md:h-32 md:w-32 md:rounded-3xl object-contain" src="assets/VanillaJS.png" alt="">
-                            <div>
+                        class="relative h-42 md:h-60 px-4 divide-y divide-slate-200 dark:divide-slate-900 border border-slate-400 dark:border-slate-900 md:dark:border-pink-400 dark:shadow dark:shadow-slate-900 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-400 md:rounded-2xl hover:scale-[1.02] transition transform duration-500 cursor-pointer text-sm md:text-base">
+                        <div class="flex items-center h-40">
+                            <img class="flex-none h-12 w-12 md:h-32 md:w-32 object-contain" src=${PostsMetadata[key].thumb} alt="">
+                            <div class="flex flex-col justify-between ml-4">
                                 <p class="text-sm "> Posted on 16 Dec, 2021</p>
-                                <h1 class="text-xl font-bold text-gray-300 mt-4 line-clamp-2">${PostsMetadata[key].title}</h1>
+                                <p class="text-xl font-bold line-clamp-2">${PostsMetadata[key].title}</p>
                                 <p class="line-clamp-3">${PostsMetadata[key].description}</p>
                             </div>
                         </div>
                         <!-- <hr class="mt-4"> -->
-                        <div class="h-16 flex flex-wrap items-center sticky py-2 px-2 space-x-2 hidden md:block">
-                            <span class="text-gray-400 text-sm">Tags: </span>
-                            <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
-                            <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
-                            <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
-                            <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
-                            <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
-                            <span class="text-gray-400 text-sm p-1 my-1"># Some weird tag,</span>
+                        <div class="h-16 flex flex-wrap items-center sticky py-2 px-2 space-x-2 hidden md:block  ">
+                            <span class="text-sm">Tags: </span>
+                            <span class="text-sm p-1 my-1"># Some weird tag,</span>
+                            <span class="text-sm p-1 my-1"># Some weird tag,</span>
+                            <span class="text-sm p-1 my-1"># Some weird tag,</span>
+                            <span class="text-sm p-1 my-1"># Some weird tag,</span>
+                            <span class="text-sm p-1 my-1"># Some weird tag,</span>
+                            <span class="text-sm p-1 my-1"># Some weird tag,</span>
     
     
                         </div>
@@ -43,12 +43,12 @@ class Home {
             <article class="pageEntry">
                 <section class="px-4 md:px-24 h-screen flex items-center justify-center">
 
-                    <div class="prose prose-sm md:prose-xl max-w-none md:w-1/2 dark:text-gray-300 text-center">
+                    <div class="prose prose-sm md:prose-xl max-w-none md:w-1/2 text-slate-500 dark:text-slate-300 text-center">
                         <img class="mx-auto mt-16 h-32 w-32 rounded-3xl ring-2 ring-white" src="assets/Default-face.png" alt="">
-                        <div class="flex justify-center space-x-8">
+                        <div class="flex justify-center space-x-8 ">
                             <!-- Twitter Button -->
                             <a class="" target="_blank" href="https://twitter.com/Rishav_Sharan">
-                                <svg class="h-8 w-8 fill-gray-400 hover:fill-white hover:scale-125 transition transform duration-500 "
+                                <svg class="h-8 w-8 fill-slate-400 hover:fill-blue-500 hover:dark:fill-white hover:scale-125 transition transform duration-500 "
                                     role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <title>Twitter</title>
                                     <path
@@ -58,7 +58,7 @@ class Home {
 
                             <!--Linkedin Button-->
                             <a class="" target="_blank" href="https://www.linkedin.com/in/rishav-sharan">
-                                <svg class="h-8 w-8 fill-gray-400 hover:fill-white hover:scale-125 transition transform duration-500 "
+                                <svg class="h-8 w-8 fill-slate-400 hover:fill-sky-700 hover:dark:fill-white hover:scale-125 transition transform duration-500 "
                                     role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <title>LinkedIn</title>
                                     <path
@@ -68,7 +68,7 @@ class Home {
 
                             <!--Github Button-->
                             <a class="" target="_blank" href="https://github.com/rishavs">
-                                <svg class="h-8 w-8 fill-gray-400 hover:fill-white hover:scale-125 transition transform duration-500 "
+                                <svg class="h-8 w-8 fill-slate-400 hover:fill-slate-900 hover:dark:fill-white hover:scale-125 transition transform duration-500 "
                                     role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <title>GitHub</title>
                                     <path
@@ -78,7 +78,7 @@ class Home {
 
                         </div>
                         <p>
-                        <h1 class="text-gray-300">
+                        <h1 class="text-slate-600 dark:text-slate-300">
                             Hey Listen!
                         </h1>
                         </p>
@@ -102,9 +102,9 @@ class Home {
                 </section>
 
                 <section class="min-h-screen">
-                    <nav class=" flex flex-wrap items-center sticky top-12 py-2 px-4 px-12 z-10  dark:bg-slate-800 shadow-inner shadow-gray-900">
-                        <button class="bg-gray-900 rounded py-1 px-2 my-2 mr-4 text-gray-400">All</button>
-                        <button class=" rounded text-orange-300 py-1 px-2 my-2 mr-4 hover:bg-slate-700 transition transform duration-500 "># Some weird tag </button>
+                    <nav class="text-sm md:text-base flex flex-wrap items-center sticky top-12 md:py-2 px-4 md:px-24 z-10 bg-slate-700 shadow shadow-slate-900">
+                        <button class="bg-slate-800 rounded shadow-inner dark:shadow-slate-900 py-1 px-2 my-2 mr-4 text-slate-400">All</button>
+                        <button class=" rounded text-pink-400 py-1 px-2 my-2 hover:bg-slate-600 transition transform duration-500 "># Some weird tag </button>
                     </nav>
                     <div class="pt-4 md:p-16 grid grid-cols-1 md:grid-cols-2 md:gap-4">
                         ${postCards}

@@ -1,4 +1,4 @@
-![Post Header Image](assets/VanillaJS.png)
+![Article Header Image](assets/VanillaJS.png)
 
 # Making a SPA in VanillaJS
 
