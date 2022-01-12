@@ -64,3 +64,7 @@ else {
 
 ## Rants
 The major work around putting together this site was around a dozen hours - with just a couple of hours writing the JS. The vast majority of my time was spendt on the CSS and look-and-feel.
+
+## Future musings
+I had shared my blog to a HN thread about client side sites and one of the commentators had a great idea;
+considering that the current implmentation 
